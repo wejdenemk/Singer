@@ -1,0 +1,60 @@
+package com.wej.singer.service;
+
+import java.util.List;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.stereotype.Service;
+
+import com.wej.singer.entities.Singer;
+import com.wej.singer.repos.BandRepository;
+
+@Service
+public class BandServiceImp implements SingerService {
+
+	@Autowired
+	BandRepository bandRepository;
+	
+	@Override
+	public Singer saveSinger(Singer p) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Singer updateSinger(Singer p) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void deleteSinger(Singer p) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public void deleteSingerById(Long id) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public Singer getSinger(Long id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public List<Singer> getAllSingers() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Page<Singer> getAllSingersParPage(int page, int size) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

@@ -1,0 +1,16 @@
+package com.wej.singer.controllers;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+
+@Controller
+public class singerController {
+	
+
+	@RequestMapping("/showCreate")
+	public String showCreate()
+	{
+	return "index";
+	}
+
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+      layout:decorate="~{template}">
+      <link rel="stylesheet" type="text/css"
+href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css"href="/webjars/bootstrap/4.3.1/css/bootstrap.min.css" />
+<head>
+<meta charset="utf-8">
+<title>Add Singer</title>
+</head>
+<body>
+<div layout:fragment="Mycontent">
+<div class="container mt-5">
+<div class="card">
+<div class="card-header"> Add Singer </div>
+<div class="card-body">
+<form action="@{saveProduit}" method="post">
+<div class="form-group">
+<label class="control-label">Nom Singer :</label>
+<input type="text" name="nomSinger" class="form-control" />
+</div>
+<div class="form-group">
+<label class="control-label">Prenom Singer :</label>
+<input type="text" name="prenomSinger" class="form-control" />
+</div>
+<div class="form-group">
+<label class="control-label">date Naissance :</label>
+<input type="date" name="dateNSinger" class="form-control" />
+</div>
+<div>
+<button type="submit" class="btn btn-primary">Valider</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

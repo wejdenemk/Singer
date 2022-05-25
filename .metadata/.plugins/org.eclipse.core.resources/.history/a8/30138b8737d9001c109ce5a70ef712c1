@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset="utf-8">
+<title>Management of singers</title>
+</head>
+<body>
+<div layout:fragment="Mycontent">
+</div>
+</body>
+</html>

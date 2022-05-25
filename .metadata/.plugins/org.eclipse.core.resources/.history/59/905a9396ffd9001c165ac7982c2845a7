@@ -1,0 +1,44 @@
+package com.wej.singer;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.wej.singer.entities.Singer;
+import com.wej.singer.repos.SingerRepository;
+
+@SpringBootTest
+class SingerApplicationTests {
+
+	@Autowired
+	private SingerRepository singerRepository;
+	
+	@Test
+	public void testCreateSinger() {
+	Singer singer = new Singer("name2","name",23,"femme");
+	singerRepository.save(singer);
+	}
+	
+	@Test
+	public void testFindSinger()
+	{
+	Singer p = singerRepository.findById(1L).get();
+	System.out.println(p);
+	}
+	
+	@Test
+	public void testUpdateSinger()
+	{
+	Singer p = singerRepository.findById(1L).get();
+	p.setPrenomSinger("prenom");
+	singerRepository.save(p);
+	}
+	
+	@Test
+	public void testDeleteProduit()
+	{
+	singerRepository.deleteById(2L);;
+	}
+	
+
+}

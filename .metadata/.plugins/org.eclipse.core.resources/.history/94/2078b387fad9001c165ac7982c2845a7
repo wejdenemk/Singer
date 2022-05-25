@@ -1,0 +1,5 @@
+package com.wej.singer.entities;
+
+public class Singer {
+
+}

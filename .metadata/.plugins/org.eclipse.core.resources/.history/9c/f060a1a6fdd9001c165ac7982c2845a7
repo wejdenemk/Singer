@@ -1,0 +1,23 @@
+package com.wej.singer;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.wej.singer.entities.Singer;
+import com.wej.singer.repos.SingerRepository;
+
+@SpringBootTest
+class SingerApplicationTests {
+
+	@Autowired
+	private SingerRepository singerRepository;
+	
+	@Test
+	public void testCreateSinger() {
+	Singer singer = new Singer("name1","name",23,"femme");
+	SingerRepository.save(singer);
+	}
+	
+
+}

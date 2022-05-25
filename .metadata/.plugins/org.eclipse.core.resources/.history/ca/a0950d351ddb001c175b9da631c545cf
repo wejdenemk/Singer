@@ -1,0 +1,5 @@
+package com.wej.singer.service;
+
+public class BandServiceImp {
+
+}

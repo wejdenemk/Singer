@@ -1,0 +1,5 @@
+package com.wej.singer.repos;
+
+public interface BandRepository {
+
+}

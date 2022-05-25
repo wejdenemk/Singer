@@ -1,0 +1,73 @@
+package com.wej.singer.entities;
+
+import java.util.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Singer {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long idSinger;
+	private String nomSinger;
+	private String prenomSinger;
+	private Date dateNSinger;
+	private String genreSinger;
+	public Singer() {
+	super();
+	}
+	public Singer(String nomSinger, String prenomSinger, Date dateNSinger , String genreSinger) {
+	super();
+	this.nomSinger = nomSinger;
+	this.prenomSinger = prenomSinger;
+	this.dateNSinger = dateNSinger;
+	this.genreSinger = genreSinger;
+	}
+	
+	public Long getIdSinger() {
+		return idSinger;
+		}
+		public void setIdSinger(Long idSinger) {
+		this.idSinger = idSinger;
+		}
+		public String getNomSinger() {
+		return nomSinger;
+		}
+		public void setNomSinger(String nomSinger) {
+		this.nomSinger = nomSinger;
+		}
+		public String getPrenomSinger() {
+		return prenomSinger;
+		}
+		public void setPrenomSinger(String prenomSinger) {
+		this.prenomSinger = prenomSinger;
+		}
+		public Date getDateNSinger() {
+			return dateNSinger;
+			}
+			public void setDateNSinger(Date dateNSinger) {
+			this.dateNSinger = dateNSinger;
+			}
+			
+			public String getGenreSinger() {
+				return genreSinger;
+				}
+				public void setGenreSinger(String genreSinger) {
+				this.genreSinger = genreSinger;
+				}
+			
+			
+			@Override
+			public String toString() {
+			return "Singer [idSinger=" + idSinger + ", nomSinger=" +
+
+			nomSinger + ", prenomSinger=" + prenomSinger
+
+			+ ", age =" + dateNSinger +", genre ="+ genreSinger+ "]";
+
+			}
+}
